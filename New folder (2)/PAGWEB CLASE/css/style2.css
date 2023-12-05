@@ -1,0 +1,229 @@
+:root{
+    --Cold:rgb(70, 130, 169); 
+  
+    --Blue:#91C8E4;
+    --Sky:#749BC2;
+    --pink:#FDCEDF;
+    --Happy:#F8E8EE;
+    --pink:#F2BED1;
+    --azul: #4682A9;
+    --azul2: #749BC2;
+    --azul3: #91C8E4;
+    --gris: #F6F4EB;
+    --gris: #EEEEEE;
+    --negro: hsl(0, 0%, 0%);
+    --morado: #262A56;
+    --naranja: #B8621B;
+    --naranja2: #E3651D;
+    --rojo: #750E21;
+    --carne: #E3CCAE;
+    --amarillo: #BED754;
+  }
+  body {
+      background-color: var(--carne);
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+  }
+  .navigation {
+      display: contents;
+      flex-flow: row wrap;
+      justify-content: flex-end;
+      
+      list-style: none;
+      margin: 0; 
+      background: var(--Sky);
+    }
+    
+    .navigation a {
+      text-decoration: none;
+      display: block;
+      padding: 1em;
+      color: white;
+    }
+    
+    .navigation a:hover {
+      background: var(--naranja);
+    }
+    
+    @media all and (max-width: 800px) {
+      .navigation {
+        justify-content: space-around;
+      }
+    }
+    
+    @media all and (max-width: 600px) {
+      .navigation {
+        flex-flow: column wrap;
+        padding: 0;
+      }
+      .navigation a { 
+        text-align: center; 
+        padding: 10px;
+        border-top: 1px solid var(--Sky); 
+        border-bottom: 1px solid var(--azul3); 
+      }
+      .navigation li:last-of-type a {
+        border-bottom: none;
+      }
+    }
+  
+  .wrapperContainer {
+      border: 1px solid black;
+      background: var(--morado);
+      padding: 20px;
+      width: 80%;
+      margin: 0 auto;
+      display: grid;
+  }
+  
+  .box {
+      border: 1px solid var(--Sky);
+      background-color: var(--naranja);
+      color: black;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: bold;
+      text-align: center;
+      line-height: 50px;
+      margin: 5px;
+      border: 1px solid black;
+      height: 100px;
+  }
+
+  
+  /* Grid ejemplo 1 */
+  .wrapper1 {
+      display: grid;
+      grid-template-columns: 200px 200px 200px;
+  }
+  
+  .wrapper2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .wrapper3 {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+  }
+  
+  .wrapper4 {
+      display: grid;
+      grid-template-columns: 500px 1fr 2fr;
+  }
+  
+  .wrapper5 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 100px;
+  }
+  
+  .box1 {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+    
+  .box2 {
+      grid-column-start: 1;
+      grid-row-start: 3;
+      grid-row-end: 5;
+  }
+  
+  .wrapper6 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 10px;
+      row-gap: 1em;
+  }
+  
+  .wrapper7 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 100px;
+  }
+    
+  .box-1 {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 3;
+  }
+    
+  .box-2 {
+      grid-column-start: 1;
+      grid-row-start: 2;
+      grid-row-end: 4;
+  }
+  
+  .wrapper8 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 100px;
+  }
+    
+  .box_1 {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      z-index: 2;
+  }
+    
+  .box_2 {
+      grid-column-start: 1;
+      grid-row-start: 2;
+      grid-row-end: 4;
+      z-index: 1;
+  }
+  
+  .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 10px;
+      padding: 10px;
+  }
+  
+  .grid-item {
+      background-color: var(--naranja);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      text-align: center;
+  }
+  
+  .Grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto;
+      grid-gap: 10px;
+      padding: 10px;
+    }
+  
+    .Grid-item {
+      background-color: var(--naranja);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      text-align: center;
+    }
+  
+    .Item-1 {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+    }
+  
+    .Item-2 {
+      grid-column: 3 / 4;
+      grid-row: 1 / 3;
+    }
+  
+    .Item-3 {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+  
+    .Item-4 {
+      grid-column: 2 / 4;
+      grid-row: 2 / 3;
+    }
+
+    a{
+      text-decoration: none;
+    }

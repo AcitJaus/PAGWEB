@@ -1,0 +1,291 @@
+:root{
+    --Cold:rgb(70, 130, 169); 
+
+    --Blue:#91C8E4;
+    --Sky:#749BC2;
+    --pink:#FDCEDF;
+    --Happy:#F8E8EE;
+    --pink:#F2BED1;
+    --azul: #4682A9;
+    --azul2: #749BC2;
+    --azul3: #91C8E4;
+    --gris: #F6F4EB;
+    --gris: #EEEEEE;
+    --negro: hsl(0, 0%, 0%);
+    --morado: #262A56;
+    --naranja: #B8621B;
+    --naranja2: #E3651D;
+    --rojo: #750E21;
+    --carne: #E3CCAE;
+    --amarillo: #BED754;
+
+}
+
+*{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+
+body {
+    background-color:var(--morado);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navigation {
+    display: contents;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0; 
+    background: var(--Sky);
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+  }
+  
+  .navigation a:hover {
+    background:var(--azul2);
+  }
+  
+  @media all and (max-width: 800px) {
+    .navigation {
+      justify-content: space-around;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .navigation {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    .navigation a { 
+      text-align: center; 
+      padding: 10px;
+      border-top: 1px solid black; 
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+    .navigation li:last-of-type a {
+      border-bottom: none;
+    }
+  }
+
+/* Contenedor general */
+.flex-container {
+    border: 1px solid black;
+    background:var(--morado);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Contenedor del ejemplo  */
+.flex-container-3 {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Contendir del ejemplo 5 */
+.flex-container-5 {
+    height: 300px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* Contendor del ejemplo 6 */
+.flex-container-6 {
+    height: 500px;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Contenedor del ejmplo 7 */
+.flex-container-7 {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor del ejemplo 8 */
+.flex-container-8 {
+    border: 1px solid black;
+    background: var(--morado);
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    height: 580px;
+
+}
+
+.flex-container-8::before,
+.flex-container-8::after{
+    content: "";
+    flex-basis: 100%;
+    width: 0;
+    order: 2;
+}
+
+/* Contenedor del ejemplo 9 */
+.flex-container-9 {
+    flex-direction: column-reverse;
+}
+
+/* Contenedor del ejemplo-10 */
+.flex-container-10 {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Caja del ejemplo 3 */
+.caja {
+    border: 1px solid black;
+    background-color: var(--naranja);
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    margin: 5px;
+    flex-grow: 1;
+    width: 48%;
+    height: 100px;
+    margin-bottom: 2%;
+}
+
+/* cajas del ejemplo 8 */
+.Box {
+    border: 1px solid black;
+    background-color: var(--naranja);
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    margin: 5px;
+    width: 32%;
+    margin-bottom: 2%;
+    height: 100px;
+}
+
+.Box:nth-child(3n+1){order: 1;}
+.Box:nth-child(3n+2){order: 2;}
+.Box:nth-child(3n){order: 3;}
+
+/* Caja general */
+.box {
+    border: 1px solid black;
+   
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    margin: 5px;
+    height: 50px;
+}
+
+.box-box {
+    flex-grow: 1;
+    height: 100px;
+    margin-left: 2%;
+}
+
+.box-m2 {
+    height: 100px;
+    width: 100px;
+}
+
+.box-center {
+    flex-grow: 1;
+    margin-left: 2%;
+}
+
+.box-m3 {
+    width: 48%;
+    height: 100px;
+    margin-bottom: 2%;
+}
+
+.caja:nth-child(3n) {
+    width: 100%;
+}
+
+.box-m4 {
+    width: 32%;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+    position: relative;
+}
+
+/* cajas del ejemplo 5 */
+.box1 {
+    width: 25%;
+    height: 40%;   
+}
+
+.box2 {
+    width: 25%;
+    height: 50%;
+}
+
+.box3 {
+    width: 25%;
+    height: 60%;
+}
+
+.box4 {
+    width: 25%;
+    height: 20%;
+}
+
+.box5 {
+    width: 25%;
+    height: 30%;
+}
+
+/* Cajas del ejemplo 6 */
+.box-1 {
+    width: 40%;
+    height: 15%;   
+}
+
+.box-2 {
+    width: 50%;
+    height: 15%;
+}
+
+.box-3 {
+    width: 60%;
+    height: 15%;
+}
+
+.box-4 {
+    width: 20%;
+    height: 15%;
+}
+
+.box-5 {
+    width: 30%;
+    height: 15%;
+}
+
+/* Cajas del ejemplo 7 */
+.box-m7 {
+    width: 300px;
+    height: 90px;
+    margin-bottom: 10px;
+}
+
+/* Cajas del ejemplo 10 */
+.box-m10 {
+    width: 32%;
+    padding-bottom: 32%;
+    margin-bottom: 2%;
+    position: relative;
+}

@@ -1,0 +1,119 @@
+:root {
+    --verdefuerte: #053B50;
+    --verde: #176B87;
+    --verdeclaro: #64CCC5;
+    --gris: #EEEEEE;
+    --negro: hsl(0, 0%, 0%);
+    --morado: #262A56;
+    --naranja: #B8621B;
+    --naranja2: #E3651D;
+    --rojo: #750E21;
+    --carne: #E3CCAE;
+    --amarillo: #BED754;
+}
+
+
+html{
+    background-image: url(../img/one\ piece2.png);
+    background-size: 100%;
+}
+
+.contenido-principal{
+    margin: 4rem 30%;
+    background-color: var(--gris);
+    height: auto;
+    
+  }
+
+  .sombra {
+    -webkit-box-shadow: 15px 15px 5px -4px rgba(0,0,0,0.53);
+    -moz-box-shadow: 15px 15px 5px -4px rgba(0,0,0,0.53);
+    box-shadow: 15px 15px 5px -4px rgba(0,0,0,0.53);
+  }
+  .encabezado {
+    background-image: url(../img/one\ piece.png);
+    background-size: cover;
+    background-position: 100%;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.contenido {
+    background-color: var(--naranja2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto {
+    text-align: center;
+    padding: 1px 0;
+}
+
+.separador {
+    width: 100%;
+    height: 150px;
+    background-color: var(--carne);
+    margin: 30px 0;
+    border-radius: 69px 67px 0px 0px;
+    -moz-border-radius: 69px 67px 0px 0px;
+    -webkit-border-radius: 69px 67px 0px 0px;
+    border: 4px solid #000000;
+}
+
+.mapa {
+  margin-top: -40px;
+}
+h1 {
+  text-align: center;
+  color: var(--naranja);
+  background-color: var(--morado);
+  font-size: 3.5rem;
+  
+}
+
+h1:hover{
+    color: var(--naranja2);
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+
+span {
+  color: var(--carne);
+}
+
+.subtitulo {
+  font-size: 0.500em; /* Ajusta el tamaño de fuente según sea necesario */
+}
+
+
+h2{
+    font-size: 3rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 900;
+}
+
+h2:hover{
+    color: var(--naranja2);
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 10rem;
+  }
+
+iframe{
+    padding-left: 1%;
+    padding-top: 2.5%;
+    width: 35rem;
+    
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}

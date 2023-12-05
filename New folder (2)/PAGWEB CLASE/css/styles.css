@@ -1,0 +1,265 @@
+:root {
+    --verdefuerte: #053B50;
+    --verde: #176B87;
+    --verdeclaro: #64CCC5;
+    --gris: #EEEEEE;
+    --negro: hsl(0, 0%, 0%);
+    --morado: #262A56;
+    --naranja: #B8621B;
+    --naranja2: #E3651D;
+    --rojo: #750E21;
+    --carne: #E3CCAE;
+    --amarillo: #BED754;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    background-color: var(--carne);
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  h1, h2, h3 {
+    text-align: center;
+
+  }
+
+  h1 {
+    color: var(--morado);
+    font-size: 3.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  span {
+    color: var(--naranja);
+    font-size: 1.5rem;
+  }
+
+  .fondo-nav {
+    background-color: var(--carne);
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--morado);
+    margin: 0 15%;
+    border-radius: 2rem;
+
+  }
+
+  .menu a {
+    color: var(--gris);
+    font-size: 1.5rem;
+    width: 15rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    padding: 1.5rem 0;
+  }
+
+  .menu a:hover{
+    background-color: var(--naranja);
+    color: var(--rojo);
+  }
+  .head-2 {
+    font-size: 2rem;
+    color: var(--morado)
+    margin: 2.6rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .ubicacion {
+    margin: 2.6rem 0;
+  }
+  .location {
+    margin-top: -20%;
+    width: 170px;
+    height: 60px;
+    /* stroke: blue; */
+  }
+
+  .p-ubicacion {
+    display: center;
+    font-size: 2rem;
+    color: var(--morado);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+
+
+  .boton-margen {
+    margin: 2.6rem 0;
+  }
+
+  .boton{
+    background-color: var(--verdefuerte);
+    padding: 1.5rem 4.5rem;
+    font-size: 1.5rem;
+    color: var(--gris);
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 2.5rem;      
+  }
+
+  .boton:hover {
+    color: black;
+    background-color: var(--gris);
+  }
+
+  .imagen-fondo {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-repeat: none;
+  }
+
+  .color-fondo {
+    display: flex;
+    flex-direction: column;     
+    align-items: center; 
+    margin-bottom: 2.6rem;
+    background-color: #262a5630;
+    width: 100%;    
+  }
+
+  .boton-margen {
+    margin: 4.5rem 0;
+  }
+
+  .contenedor {
+    margin: 3rem auto;
+    background-color: var(--morado);
+    width: 120rem;
+    height: auto;
+    padding-bottom: 3.25rem;
+    border-radius: 2rem;
+  }
+
+  .sombra {
+    box-shadow: 10px 10px 9px -4px rgba(0,0,0,0.62);
+  -webkit-box-shadow: 10px 10px 9px -4px rgba(0,0,0,0.62);
+  -moz-box-shadow: 10px 10px 9px -4px rgba(0,0,0,0.62);  
+  }
+
+  .head-servicios {
+    color: var(--carne);
+    font-size: 3.2rem;
+    padding-top: 3rem;
+  }
+
+  .head-3 {
+    color: var(--carne);
+    font-size: 2.75rem;
+  }
+
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.25rem;   
+    margin: 0 1.25rem; 
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: justify;
+  }
+
+  .p-servicio {
+    text-align: center;
+    color: var(--carne);
+    margin: 1.25rem 0;
+    text-align: justify;
+  }
+
+  .icon-servicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+    background-color: var(--naranja);
+    border-radius: 50%;
+  }
+
+  .icon {
+    stroke: white;
+  }
+
+  legend {
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--morado);
+    font-weight: 900;
+    font-size: 1.5rem;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-bottom: solid 3px;
+  }
+
+  fieldset {
+    width: 80rem;
+    margin: 0 auto;
+    border: var(--verdefuerte) 2.75px solid;
+    padding: 2.5rem;
+    background-color: var(--carne);
+    border-radius: 2rem;
+  }
+  .campos {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto auto 12.5rem;
+    column-gap: 1.25rem;
+  }
+
+  .campo:nth-child(3),
+  .campo:nth-child(4) {
+    grid-column: 1 / 3;
+  }
+
+  .text-input {
+    width: 100%;
+    height: 2.25rem;
+    font-size: 1.5rem;
+    margin: 0.75rem 0;
+  }
+
+  .text-input::placeholder{
+    color: morado;
+  }
+
+  .text-area {
+    width: 100%;
+    height: 10rem;
+
+  }
+
+  label {
+    font-size: 1.5rem;
+    color: var(--morado);
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .align-boton {
+    text-align: right;
+
+  }
+
+  .align-boton .boton {
+    margin-top: 1.75rem;
+    border: none;
+  }
+
+  footer {
+    width: 120rem;
+    margin: 3rem auto;
+    text-align: right;
+    color: var(--verdefuerte);
+    font-weight: 700;
+  }
+
+  
